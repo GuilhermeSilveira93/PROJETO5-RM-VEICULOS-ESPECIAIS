@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
+.center{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+/* ----------------------------------LOGO-----------------------------------------*/
+header{
+    padding: 25px;
+}
+header img{
+    float: left;
+}
+header ul{
+    margin-top: 30px;
+    float: right;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+}
+/* ----------------------------------LOGO-----------------------------------------*/
+
+/* ----------------------------------BACKGROUND-----------------------------------------*/
+.bg{
+    width: 100%;
+    position: relative;
+}
+.bg .center{
+    width: 100%;
+    padding-top: 100%;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* ----------------------------------BACKGROUND-----------------------------------------*/
