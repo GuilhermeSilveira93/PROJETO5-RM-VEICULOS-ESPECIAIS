@@ -117,13 +117,64 @@ nav.mobile li a{
 }
 /* ----------------------------------BANNER-----------------------------------------*/
 
+/* ----------------------------------VITRINE-----------------------------------------*/
+
+.line-titulo{
+	width: 100%;
+	margin: 50px auto;
+	position: relative;
+	text-align: center;
+}
+.ln1{
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	top:20px;
+	background:black;
+}
+.center .line-titulo h2{
+	position: relative;
+	background: white;
+	display: inline-block;
+	text-align: center;
+	font-size: 27px;
+	padding:0 20px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+.vitrine{
+    max-width: 1000px;
+    width: 100%;
+    margin: 25px auto;
+}
+.carros{
+    width: 33.3%;
+    display: inline-block;
+    margin-right: -4px;
+    padding: 25px;
+}
+.carros img{
+    width: 100%;
+}
+.carros > a{
+    width: 140px;
+    display: block;
+    margin-top: 10px;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+}
+/* ----------------------------------VITRINE-----------------------------------------*/
+
 /* ----------------------------------RESPONSIVO-----------------------------------------*/
 @media screen and (max-width:995px){
     .bg .car{
         background-position: bottom;
     }
 }
-@media screen and (max-width:647px){
+@media screen and (max-width:664px){
     header .logo .center nav.desktop{
         display: none;
     }
@@ -134,7 +185,25 @@ nav.mobile li a{
         background-size: contain;
         background-position: bottom;
     }
-
+    .vitrine{
+        width: 100%;
+    }
+    .carros{
+        margin: 50px 10%;
+        display: block;
+        width: 80%;
+        border: 0;
+        display: inline-block;
+        padding: 0px;
+    }
+    .carros img{
+        width: 100%;
+    }
+    .carros > a{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
 }
 
 
