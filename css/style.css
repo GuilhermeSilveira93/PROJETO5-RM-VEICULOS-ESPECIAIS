@@ -19,24 +19,57 @@ html,body{
 header .logo{
     padding: 20px 2% 35px 2%;
 }
+.center nav.desktop ul li a{
+    color: black;
+    text-decoration: none;
+}
 header img{
     float: left;
 }
-header ul{
+.center nav.desktop > ul{
     margin-top: 30px;
     float: right;
 }
-header ul li{
+.center nav.desktop > ul li{
     list-style: none;
     display: inline-block;
     font-size: 23px;
 	padding:0 20px;
     font-style: italic;
 }
+nav.mobile{
+    margin-top: 30px;
+    width: 32px;
+    height: 32px;
+    float: right;
+    background-size: 100% 100%;
+    background-image: url(../images/icon_menu.png);
+    display: none;
+}
+nav.mobile ul{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 105px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 15px 15px 2px red;
+}
+nav.mobile li{
+    font-size: 23px;
+	padding: 20px 0;
+    font-style: italic;
+}
+nav.mobile li a{
+    color: black;
+    text-decoration: none;
+}
 /* ----------------------------------LOGO-----------------------------------------*/
 
 /* ----------------------------------BACKGROUND-----------------------------------------*/
-.bg{
+.bg > .center{
     position: relative;
 }
 .bg .car{
@@ -55,6 +88,54 @@ header ul li{
     position: relative;
     width: 100%;
     background-color: black;
-    height: 55vh;
+    height: 60vh;
 }
 /* ----------------------------------BACKGROUND-----------------------------------------*/
+
+/* ----------------------------------BANNER-----------------------------------------*/
+.banner{
+    position: absolute;
+    top: 35px;
+    left: 45px;
+}
+.text-banner{
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 23px;
+    padding: 15px 30px;
+    color: white;
+    width: 260px;
+    background-image: url(../images/box-text.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.text-banner:nth-last-child(1){
+    color: black;
+    background-image: url(../images/box-white-text.png);
+    width: 300px;
+}
+/* ----------------------------------BANNER-----------------------------------------*/
+
+/* ----------------------------------RESPONSIVO-----------------------------------------*/
+@media screen and (max-width:995px){
+    .bg .car{
+        background-position: bottom;
+    }
+}
+@media screen and (max-width:647px){
+    header .logo .center nav.desktop{
+        display: none;
+    }
+    header .logo .center nav.mobile{
+        display: block;
+    }
+    .bg .car{
+        background-size: contain;
+        background-position: bottom;
+    }
+
+}
+
+
+/* ----------------------------------RESPONSIVO-----------------------------------------*/
