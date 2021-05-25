@@ -168,6 +168,79 @@ nav.mobile li a{
 }
 /* ----------------------------------VITRINE-----------------------------------------*/
 
+/* ----------------------------------DETALHES-----------------------------------------*/
+.servicos{
+    background-color: #252425 ;
+    width: 45%;
+    position: relative;
+}
+.depoimentos{
+    background-color: #FB3F29;
+    width: 55%;
+}
+.detserv{
+    color: white;
+    padding: 40px 80px 250px 80px;
+    display: inline-block;
+    margin-right: -4px;
+    height: 25vh;
+    vertical-align: top;
+}
+.servicos ul{
+    margin-top: 25px;
+    list-style-position: inside;
+}
+.servicos > p{
+    position: absolute;
+    background-color: red;
+    padding: 10px;
+    width: 85px;
+    right: 25px;
+    bottom: 50px;
+}
+.depoimentos p{
+    margin: 25px;
+}
+.depoimentos span{
+    display: block;
+    text-align: right;
+    color: #252425;
+}
+/* ----------------------------------DETALHES-----------------------------------------*/
+
+/* ----------------------------------CONTATO-----------------------------------------*/
+form{
+    max-width: 600px;
+    font-size: 23px;
+    margin: 0 auto;
+}
+input{
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 25px;
+    margin: 15px 0;
+    padding: 10px 25px;
+}
+input:nth-of-type(1){
+    width: 100%;
+}
+input:nth-of-type(2){
+    width: 50%;
+    float: left;
+}
+input:nth-of-type(3){
+    width: 50%;
+    float: left;
+}
+textarea{
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 25px;
+    padding: 10px 25px;
+    width: 100%;
+    resize: none;
+
+}
+/* ----------------------------------CONTATO-----------------------------------------*/
+
 /* ----------------------------------RESPONSIVO-----------------------------------------*/
 @media screen and (max-width:995px){
     .bg .car{
