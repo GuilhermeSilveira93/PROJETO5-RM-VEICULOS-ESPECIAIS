@@ -231,6 +231,14 @@ input:nth-of-type(3){
     width: 50%;
     float: left;
 }
+input:nth-of-type(4){
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    float: right;
+    text-align: center;
+    width: 100px;
+}
 textarea{
     border: 1px solid rgb(131, 131, 131);
     border-radius: 25px;
@@ -241,12 +249,81 @@ textarea{
 }
 /* ----------------------------------CONTATO-----------------------------------------*/
 
+/* ----------------------------------FOOTER-----------------------------------------*/
+footer .center{
+    margin-top: 100px;
+    background-color: #252425;
+    font-style: italic;
+    color: white;
+    padding: 25px 30px 50px 30px;
+}
+footer nav{
+    float: left;
+}
+footer nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.direitos{
+    float: right;
+}
+/* ----------------------------------FOOTER-----------------------------------------*/
+
 /* ----------------------------------RESPONSIVO-----------------------------------------*/
+
+                     /* ---------------------  995PX  ---------------------*/
 @media screen and (max-width:995px){
     .bg .car{
         background-position: bottom;
     }
 }
+                      /* ---------------------  995PX  ---------------------*/
+
+                      /* ---------------------  800PX  ---------------------*/
+@media screen and (max-width:800px){
+    .servicos{
+        width: 100%;
+    }
+    .depoimentos{
+        width: 100%;
+    }
+    .detserv{
+        color: white;
+        padding: 40px 80px 250px 80px;
+        display: inline-block;
+        margin-right: -4px;
+        height: 25vh;
+        vertical-align: top;
+    }
+    .servicos ul{
+        margin-top: 25px;
+        list-style-position: inside;
+    }
+    .servicos > p{
+        position: absolute;
+        background-color: red;
+        padding: 10px;
+        width: 85px;
+        right: 25px;
+        bottom: 50px;
+    }
+    .depoimentos p{
+        margin: 25px;
+    }
+    .depoimentos span{
+        display: block;
+        text-align: right;
+        color: #252425;
+    }
+} 
+                      /* ---------------------  800PX  ---------------------*/                     
+
+                      /* ---------------------  664PX  ---------------------*/
 @media screen and (max-width:664px){
     header .logo .center nav.desktop{
         display: none;
@@ -277,7 +354,20 @@ textarea{
         margin-top: 10px;
         text-align: center;
     }
+    form{
+        padding: 0px 5%;
+    }
+    footer{
+        text-align: center;
+    }
+    footer nav{
+        float: none;
+    }
+    .direitos{
+        float: none;
+    }
 }
+                      /* ---------------------  664PX  ---------------------*/
 
 
 /* ----------------------------------RESPONSIVO-----------------------------------------*/
