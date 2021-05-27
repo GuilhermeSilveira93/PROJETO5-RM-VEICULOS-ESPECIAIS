@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylevendas.css">
     <title>VENDAS - RM VEICULOS</title>
 </head>
 <body>
@@ -37,32 +37,70 @@
         </section><!-- LOGO -->
     </header>
     <main>
-        <section class="center">
-            <div class="line-titulo">
-                <div class="ln1"></div> <!-- LINHA PRETA -->
-                <h2>VEICULOS EM DESTAQUE</h2>
-            </div>
-            <section class="vitrine">
-                <div class="carros">
-                    <img src="images/carro1.jpg" alt="">
-                    <h2>Volkswagen Karmann-ghia</h2>
-			    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
-			    <a href="">Mais Detalhes</a>
-                </div><!--VITRINE-->
-                <div class="carros">
-                    <img src="images/carro1.jpg" alt="">
-                    <h2>Volkswagen Karmann-ghia</h2>
-			    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
-			    <a href="">Mais Detalhes</a>
-                </div><!--VITRINE-->
-                <div class="carros">
-                    <img src="images/carro1.jpg" alt="">
-                    <h2>Volkswagen Karmann-ghia</h2>
-			    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
-			    <a href="">Mais Detalhes</a>
-                </div>
-            </section><!--VITRINE-->
-        </section><!--VITRINE-->
+        <div class="line-titulo">
+            <div class="ln1"></div> <!-- LINHA PRETA -->
+            <h2>VEICULOS PARA VENDA</h2>
+        </div>
+            <section class="center">
+                <section class="vitrine">
+                    <div class="carros">
+                        <img src="images/carro1.jpg" alt="">
+                        <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais Detalhes</a>
+                    </div><!--VITRINE-->
+                    <div class="carros">
+                        <img src="images/carro1.jpg" alt="">
+                        <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais Detalhes</a>
+                    </div><!--VITRINE-->
+                    <div class="carros">
+                        <img src="images/carro1.jpg" alt="">
+                        <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais Detalhes</a>
+                    </div><!--VITRINE-->
+                    <div class="carros">
+                        <img src="images/carro1.jpg" alt="">
+                        <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais Detalhes</a>
+                    </div><!--VITRINE-->
+
+                    <div class="carros">
+                        <img src="images/carro1.jpg" alt="">
+                        <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais Detalhes</a>
+                    </div><!--VITRINE-->
+                    <div class="carros">
+                        <img src="images/carro1.jpg" alt="">
+                        <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="">Mais Detalhes</a>
+                    </div>
+                </section><!--VITRINE-->
+
+                <section class="filtro">
+                        <form action="">
+                            <h2>Filtro por preço</h2>
+                            <div class="slidecontainer">
+                                <input type="range" min="1000" max="250000" value="20000" class="slider" id="myRange">
+                                <p>Valor: <span id="demo"></span></p>
+                              </div>
+                              <script>
+                              var slider = document.getElementById("myRange");
+                              var output = document.getElementById("demo");
+                              output.innerHTML = slider.value;
+                              slider.oninput = function() {
+                                output.innerHTML = this.value;
+                              }
+                              </script>
+                        </form>
+                </section>
+                <div class="clear"></div>
+            </section><!--CENTER-->
     </main>
     <footer>
         <section class="center">
