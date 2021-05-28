@@ -13,7 +13,7 @@ html,body{
 .center{
     margin: 0 auto;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1380px;
 }
 /* ----------------------------------LOGO-----------------------------------------*/
 header .logo{
@@ -83,6 +83,11 @@ nav.mobile li a{
 	top:20px;
 	background:black;
 }
+.vitrine{
+    float: right;
+    max-width: 1000px;
+    width: 80%;
+}
 .line-titulo h2{
 	position: relative;
 	background: white;
@@ -92,16 +97,6 @@ nav.mobile li a{
 	padding:0 20px;
 	font-style: italic;
 	text-transform: uppercase;
-}
-.vitrine{
-    float: right;
-    max-width: 1000px;
-    width: 80%;
-}
-.filtro{
-    background-color: red;
-    width: 20%;
-    float: left;
 }
 .carros{
     width: 33.3%;
@@ -124,8 +119,18 @@ nav.mobile li a{
 }
 /* ----------------------------------VITRINE-----------------------------------------*/
 
+/* ----------------------------------FILTRO-----------------------------------------*/
 
-
+.filtro{
+    margin-bottom: 0px;
+    width: 20%;
+    float: left;
+    padding: 20px;
+}
+input[type=checkbox]{
+    display: inline-block;
+}
+/* ----------------------------------FILTRO-----------------------------------------*/
 /* ----------------------------------FOOTER-----------------------------------------*/
 footer .center{
     margin-top: 100px;
@@ -163,40 +168,7 @@ footer nav ul li a{
 
                       /* ---------------------  800PX  ---------------------*/
 @media screen and (max-width:800px){
-    .servicos{
-        width: 100%;
-    }
-    .depoimentos{
-        width: 100%;
-    }
-    .detserv{
-        color: white;
-        padding: 40px 80px 250px 80px;
-        display: inline-block;
-        margin-right: -4px;
-        height: 25vh;
-        vertical-align: top;
-    }
-    .servicos ul{
-        margin-top: 25px;
-        list-style-position: inside;
-    }
-    .servicos > p{
-        position: absolute;
-        background-color: red;
-        padding: 10px;
-        width: 85px;
-        right: 25px;
-        bottom: 50px;
-    }
-    .depoimentos p{
-        margin: 25px;
-    }
-    .depoimentos span{
-        display: block;
-        text-align: right;
-        color: #252425;
-    }
+
 } 
                       /* ---------------------  800PX  ---------------------*/                     
 
@@ -207,10 +179,6 @@ footer nav ul li a{
     }
     header .logo .center nav.mobile{
         display: block;
-    }
-    .bg .car{
-        background-size: contain;
-        background-position: bottom;
     }
     .vitrine{
         width: 100%;
@@ -231,9 +199,6 @@ footer nav ul li a{
         margin-top: 10px;
         text-align: center;
     }
-    form{
-        padding: 0px 5%;
-    }
     footer{
         text-align: center;
     }
@@ -242,6 +207,15 @@ footer nav ul li a{
     }
     .direitos{
         float: none;
+    }
+    .filtro{
+        width: 100%;
+    }
+    .slidecontainer, .filtroyear{
+        width: 50%;
+        display: block;
+        float: left;
+        padding-left: 25px;
     }
 }
                       /* ---------------------  664PX  ---------------------*/

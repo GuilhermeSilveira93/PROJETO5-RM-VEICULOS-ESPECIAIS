@@ -41,7 +41,40 @@
             <div class="ln1"></div> <!-- LINHA PRETA -->
             <h2>VEICULOS PARA VENDA</h2>
         </div>
-            <section class="center">
+            <section class="center #center">
+                <section class="filtro">
+                    <div class="formulario">
+                        <form action="">
+                            
+                            <div class="slidecontainer">
+                                <h2>Filtro por preço</h2>
+                                <input type="range" min="1000" max="250000" value="20000" class="slider" id="myRange">
+                                <p>Valor: <span id="demo"></span></p>
+                                <script>
+                                var slider = document.getElementById("myRange");
+                                var output = document.getElementById("demo");
+                                output.innerHTML = slider.value;
+                                slider.oninput = function() {
+                                output.innerHTML = this.value;
+                                }
+                                </script>
+                            </div><!--SLIDECONTAINER-->
+                            <div class="filtroyear">
+                                <h2>Filtro por Ano</h2>
+                                <input type="checkbox" id="y1960" name="y1960">
+                                <label for="1960">1960-1970</label><br/>
+                                <input type="checkbox" id="y1960" name="y1960">
+                                <label for="1960">1971-1990</label><br/>
+                                <input type="checkbox" id="y1960" name="y1960">
+                                <label for="1960">1991-2000</label><br/>
+                                <input type="checkbox" id="y1960" name="y1960">
+                                <label for="1960">2001-2021</label><br/>
+                            </div><!--FILTRO YEAR-->
+                            
+                        </form>
+                        <div class="clear"></div>
+                </section><!-- FILTRO -->
+
                 <section class="vitrine">
                     <div class="carros">
                         <img src="images/carro1.jpg" alt="">
@@ -81,24 +114,6 @@
                     <a href="">Mais Detalhes</a>
                     </div>
                 </section><!--VITRINE-->
-
-                <section class="filtro">
-                        <form action="">
-                            <h2>Filtro por preço</h2>
-                            <div class="slidecontainer">
-                                <input type="range" min="1000" max="250000" value="20000" class="slider" id="myRange">
-                                <p>Valor: <span id="demo"></span></p>
-                              </div>
-                              <script>
-                              var slider = document.getElementById("myRange");
-                              var output = document.getElementById("demo");
-                              output.innerHTML = slider.value;
-                              slider.oninput = function() {
-                                output.innerHTML = this.value;
-                              }
-                              </script>
-                        </form>
-                </section>
                 <div class="clear"></div>
             </section><!--CENTER-->
     </main>
