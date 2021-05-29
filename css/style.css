@@ -7,6 +7,9 @@
 html,body{
     width: 100%;
 }
+html{
+    scroll-behavior: smooth;
+}
 .clear{
     clear: both;
 }
@@ -125,6 +128,12 @@ nav.mobile li a{
 	position: relative;
 	text-align: center;
 }
+.line-titulo2{
+	width: 100%;
+	margin: 0px auto;
+	position: relative;
+	text-align: center;
+}
 .ln1{
 	position: absolute;
 	height: 3px;
@@ -132,7 +141,7 @@ nav.mobile li a{
 	top:20px;
 	background:black;
 }
-.center .line-titulo h2{
+.center .line-titulo h2, .center .line-titulo2 h2{
 	position: relative;
 	background: white;
 	display: inline-block;
