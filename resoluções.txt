@@ -1,0 +1,9 @@
+/* 320px - 480px = mobile /
+
+/ 480px - 768px = tablet /
+
+/ 768px - 1024px = telas menores, laptops /
+
+/ 1024px - 1200px = desktop /
+
+/ 1200 e + = telas maiores, tvs */
